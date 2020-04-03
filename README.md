@@ -1,6 +1,15 @@
+## What it is
+
+The following Project was created to help understand how to use exceljs and how we can create a wrapper around it in our project to make it simpler to download excel.
+
+The helper method can be further extened to use more functionalities of exceljs.
+
+The implementation of exceljs can be found in the following repository
+https://github.com/exceljs/exceljs
+
 # Angular9ExceljsWrapper
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5
 
 ## Development server
 
@@ -13,14 +22,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
