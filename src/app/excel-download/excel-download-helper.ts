@@ -67,14 +67,12 @@ export class ExcelDownloadHelper {
     }
 
     addColumnLengthValidation(workSheet: any, columnNo: number, maxLength: number) {
-        workSheet.getColumn(columnNo).eachCell({ includeEmpty: true }, (cell: any, rowNumber: any) => {
-            cell.dataValidation = {
-                type: 'textLength',
-                operator: 'lessThan',
-                showErrorMessage: true,
-                allowBlank: true,
-                formulae: [maxLength]
-            };
+        workSheet.dataValidations.add('I1:I99999', {
+            type: 'textLength',
+            operator: 'lessThan',
+            showErrorMessage: true,
+            allowBlank: true,
+            formulae: [maxLength]
         });
     }
 

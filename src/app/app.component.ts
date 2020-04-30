@@ -76,6 +76,8 @@ export class AppComponent {
     // Add drop down formula for the column 7 getting data from the hidden sheet
     this.excelDownloadHelper.addDropDown(productSheet, 7, hiddenSheet, 'A1', 'A3');
 
+    this.excelDownloadHelper.addColumnLengthValidation(productSheet, 8, 10);
+
     // Download the final Sheet
     this.excelDownloadHelper.downloadExcel();
   }
